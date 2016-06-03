@@ -7,3 +7,69 @@ body, html {
 	margin: 0;
 	padding: 0;
 }
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/************* HEADER ***************/
+
+
+/* Main-Menu */
+
+.main-menu {
+	background-color: #01060c;
+	color: #fff;
+	font-size: 300;
+	line-height: 3.1428;
+}
+
+.main-menu__flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-menu ul {
+	list-style: none;
+}
+
+.main-menu a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-menu__left-side li,
+.main-menu__right-side li {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.main-menu__right-side li:last-child {
+	margin-right: 0;
+}
+
+.main-menu__left-side li:last-child {
+	position: relative;
+}
+
+
+.main-menu a:hover {
+	color: #4ca4c8;
+}
+
+.main-menu__favorites::before {
+	content: '';
+	background: url("../img/sprite.png") no-repeat;
+	width: 13px;
+	height: 10px;
+	background-position: -250px -120px;
+	position: absolute;
+	top: 16px;
+	right: 80px;
+}
+
+.main-menu__left-side li:nth-child(2) {
+	margin-right: 60px;
+}
